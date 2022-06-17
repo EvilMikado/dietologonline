@@ -177,7 +177,7 @@ p{
 }
 .burger__link{
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
@@ -259,7 +259,7 @@ p{
   transition: transform .5s;
 }
 .section-problems__card:hover .problem-card__img{
-  transform:rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .container-flex{
   display: flex;
@@ -353,11 +353,9 @@ p{
 }
 .section-dependency__container{
   display: flex;
-  justify-content: space-between;
   gap: 2em;
 }
 .section-dependency__img {
-    border-radius: 10px;
     max-width: 100%;
     display: block;
 }
@@ -429,6 +427,7 @@ p{
   background-color: #5DBD6D;
   color: white;
   border: none;
+  margin-top: -1px;
 }
 .subscription__offers-list {
   display: flex;
@@ -513,7 +512,7 @@ p{
   display: block;
   max-width: 100%;
   order:2;
-  margin-right: -4em;
+  /* margin-right: -4em; */
 }
 .section-ask__info{
   margin-left: 0;
@@ -622,11 +621,20 @@ p{
 }
 @media  screen and (max-width:1025px) {
   html{
-    font-size: 14px;
+    font-size: 15px;
   }
 }
+@media  screen and (max-width:1024px) {
+  .section-dependency__info{
+    width: 100%;
+  }
+  .section-dependency__img{
+    display: none;
+  }
+  
+}
 @media screen and (max-width: 1160px) {
-  .section-result__img{
+  .container-flex__img{
     max-width: 45%;
   }
   .header__menu{
@@ -663,7 +671,7 @@ p{
     width: 100%;
   }
   .chemical-element{
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
   }
   .burger__menu{
     width: 55%;
