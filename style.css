@@ -314,16 +314,14 @@ p{
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
-  max-width: 47px;
+  max-width: 3rem;
+  width: 30%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: .5em;
   transition: background-color .25s, transform .25s;
-}
-.chemical-element:hover{
-  transform: rotateZ(-15deg) scale(1.05);
 }
 .chemical-element_type_fe{
   background: #FAE3E8;
@@ -364,6 +362,7 @@ p{
   flex-wrap: wrap;
   width: 55%;
   gap: 1.5em;
+  text-align: left;
 }
 .section-dependency__item{
   width: 45%;
@@ -669,9 +668,12 @@ p{
   }
   .section-dependency__item{
     width: 100%;
+    display: flex;
+    justify-content: stretch;
+    gap: 1em;
   }
   .chemical-element{
-    margin: 0 auto 1em auto;
+    margin-bottom: 0;
   }
   .burger__menu{
     width: 55%;
