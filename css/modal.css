@@ -17,16 +17,21 @@
   position: fixed;
   z-index: 100;
   top: 50%;
-  left: 50%;
+  left: -100%;
   transform: translate(-50%, -50%);
+  transition: 0.5s ease;
 }
 
 .modal {
-  display: none;
   width: 30rem;
   background: white;
   padding: 2em;
   border-radius: 1em;
+}
+@media screen and (max-width: 426px) {
+  .modal {
+    width: 100%;
+  }
 }
 .modal__title {
   position: relative;
@@ -93,5 +98,5 @@
   background-color: #27ae60;
 }
 .modal_visible {
-  display: block;
+  left: 50%;
 }/*# sourceMappingURL=modal.css.map */

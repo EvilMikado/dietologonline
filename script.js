@@ -7,6 +7,7 @@ const contactBtn = document.querySelectorAll('.btn')
 const overlay = document.querySelector('.overlay')
 const phoneInput = document.querySelector('.phone-input')
 const modalBtn = document.querySelector('.modal__btn')
+const modalForm = document.querySelector('.modal__form')
 
 phoneInput.value = ''
 
@@ -38,6 +39,7 @@ overlay.addEventListener('click',()=>{
 modalBtn.addEventListener('click', ()=>{
   modal.classList.remove('modal_visible')
   overlay.classList.remove('overlay_visible')
+  modalForm.reset();  // Reset all form data
 })
 
 phoneInput.addEventListener('focusout',()=>{

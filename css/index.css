@@ -6,23 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .section-describe:before,
-.section-eating:before,
-.section-psubscriptions:before,
-.section-ask:before {
-  display: block;
-  content: " ";
-  margin-top: -75px;
-  height: 75px;
-  visibility: hidden;
-} */
-/* .section-problems:before{
-  display: block;
-  content: " ";
-  margin-top: -22px;
-  height: 22px;
-  visibility: hidden;
-} */
+.section-describe,
+.section-eating,
+.section-subscriptions,
+.section-ask,
+.section-problems{
+  scroll-margin-top: 30px;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -295,6 +285,7 @@ p{
   justify-content: center;
   align-items: center;
   margin-bottom: .5em;
+  user-select: none;
   transition: background-color .25s, transform .25s;
 }
 .chemical-element_type_fe{
@@ -329,6 +320,7 @@ p{
 }
 .section-dependency__img {
     max-width: 100%;
+    border-radius: 10px 11px 10px 11px;
     display: block;
 }
 .section-dependency__info{
@@ -665,4 +657,5 @@ p{
   .chemical-element{
     margin-bottom: 0;
   }
+  
 }
