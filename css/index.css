@@ -1,11 +1,12 @@
 @import url('fonts.css');
+@import url('modal.css');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.section-describe:before,
+/* .section-describe:before,
 .section-eating:before,
 .section-psubscriptions:before,
 .section-ask:before {
@@ -14,14 +15,14 @@
   margin-top: -75px;
   height: 75px;
   visibility: hidden;
-}
-.section-problems:before{
+} */
+/* .section-problems:before{
   display: block;
   content: " ";
   margin-top: -22px;
   height: 22px;
   visibility: hidden;
-}
+} */
 html{
   scroll-behavior: smooth;
 }
@@ -92,7 +93,7 @@ p{
   top: 0;
   width: 100%;
   background: white;
-  z-index: 100;
+  z-index: 10;
 }
 .header__container{
   display: flex;
@@ -192,7 +193,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url('images/confetti.svg');
+  background-image: url('/images/confetti.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 55%;
@@ -345,6 +346,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  margin-bottom: 50px;
 }
 .subscription{
   width:32%;
@@ -353,7 +355,7 @@ p{
 }
 .subscription__header {
   background: #5DBD6D;
-  background-image: url('images/Ellipse.svg'), url('images/Ellipse thin.svg');
+  background-image: url('/images/Ellipse.svg'), url('/images/Ellipse thin.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 2em 0 1.5em 1.5em;
@@ -386,7 +388,7 @@ p{
   border-radius: 0 0 10px 10px;
 }
 .subscription-focused__main{
-  background-image: url('images/Ellipse big.svg'), url('images/Ellipse thin big.svg');
+  background-image: url('/images/Ellipse big.svg'), url('/images/Ellipse thin big.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -400,20 +402,20 @@ p{
   flex-direction: column;
   gap: 1.5em;
   margin-bottom: 2em;
-  list-style-image: url('images/icons/list-type-ok-green.svg');
+  list-style-image: url('/images/icons/list-type-ok-green.svg');
 }
 .subscriprtion-focused__offers-list{
-  list-style-image: url('images/icons/list-type-ok.svg');
+  list-style-image: url('/images/icons/list-type-ok.svg');
 }
 .subscription__list-item {
   padding-left: .5em;
 }
 .subscription__list-item_not-include{
-  list-style-image: url('images/icons/list-type-cancel.svg');
+  list-style-image: url('/images/icons/list-type-cancel.svg');
   opacity: 0.55;
 }
 .subscription-focused__list-item_not-include{
-  list-style-image: url('images/icons/list-type-cancel-light.svg');
+  list-style-image: url('/images/icons/list-type-cancel-light.svg');
   opacity: 0.55;
 }
 .subscription-focused__btn{
@@ -424,9 +426,9 @@ p{
   background-color: #f5f5f5;
   box-shadow: 1px 1px 5px gray;
 }
-.section-subscription__garantee{
+/* .section-subscription__garantee{
   margin-top: 2em;
-}
+} */
 .section-eating{
   background: #F9FAFC;
 }
@@ -441,7 +443,7 @@ p{
   margin: 1.5em 0;
 }
 .section-eating__btn::after{
-  content: url('images/icons/Vector.svg');
+  content: url('/images/icons/Vector.svg');
   margin-left: .5em;
 }
 .section-eating__btn:hover{

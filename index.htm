@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.png">
   <title>DIETOLOGONLINE</title>
 </head>
-<body>
+<body class="page">
+  <div class="overlay"></div>
+  <div class="modal page__modal">
+    <form class="modal__form" action="">
+      <h2 class="modal__title">Оставьте заявку</h2>
+      <input type="text" class="modal__input" placeholder="Ваше имя">
+      <input type="text" class="modal__input" placeholder="Ваша почта">
+      <input type="text" class="modal__input phone-input" placeholder="Номер телефона">
+      <textarea placeholder="Ваши пожелания" class="modal__textarea"></textarea>
+      <button type="button" class="modal__btn">Отправить</button>
+    </form>
+  </div>
   <header class="header">
     <div class="header__container">
-      <a href="#" class="company-name header__company-name">Dietologonline</a>
+      <a href="#/" class="company-name header__company-name">Dietologonline</a>
       <nav class="menu header__menu">
         <ul class="menu__list header__menu">
           <li class="menu__item"><a href="#section-problems" class="menu__link">Почему мы?</a></li>
@@ -19,10 +30,10 @@
           <li class="menu__item"><a href="#section-subscriptions" class="menu__link">Стоимость</a></li>
           <li class="menu__item"><a href="#section-eating" class="menu__link">Преимущества</a></li>
           <li class="menu__item"><a href="#section-ask" class="menu__link">Спросите нас</a></li>
-          <li class="menu__item"><a href="#" class="header-btn header-btn_burger">Выбрать диетолога</a></li>
+          <li class="menu__item"><a href="#/" class="btn header-btn header-btn_burger">Выбрать диетолога</a></li>
         </ul>
       </nav>
-      <a href="#" class="header-btn">Выбрать диетолога</a>
+      <a href="#/" class="btn header-btn">Выбрать диетолога</a>
       <div class="burger">
         <button id="burger__toggle">
             <span class="burger__line"></span>
@@ -35,7 +46,7 @@
       <div class="section-offer__info">
         <h1 class="section-offer__title">Диета для бега</h1>
         <p class="section-offer__text">Получите легкость и свободу, станьте первым вместе с персональным диетологом</p>
-        <a href="#" class="btn section-offer__btn">Выбрать диетолога</a>
+        <a href="#/" class="btn section-offer__btn">Выбрать диетолога</a>
       </div>
         <img class="section-offer__img" src="images/character.svg" alt="Running girl">
     </div>
@@ -84,7 +95,7 @@
         <h2>Лучший результат</h2>
         <h3>Правильное питание действительно работает</h3>
         <p class="section-result__text container-flex__text">При неправильном питании спорт может оказаться вредным для здоровья. И наоборот – сбалансированный рацион, разработанный с учетом индивидуальных особенностей человека, помогает не только похудеть и получить прекрасное тело, но и добиться невероятных результатов в спорте.</p>
-        <a href="#" class="btn">Выбрать диетолога</a>
+        <a href="#/" class="btn">Выбрать диетолога</a>
       </div>
     </div>
   </section>
@@ -189,7 +200,7 @@
               <li class="subscription__list-item subscription-list-item_not-include">Консультации по спортивному питанию</li>
               <li class="subscription__list-item subscription__list-item_not-include">Бесплатная неделя для вашего друга или члена семьи</li>
             </ul>
-            <a href="#" class="btn">Выбрать</a>
+            <a href="#/" class="btn">Выбрать</a>
           </div>
         </div>
         <div class="subscription subscription-focused">
@@ -207,7 +218,7 @@
               <li class="subscription__list-item">Консультации по спортивному питанию</li>
               <li class="subscription__list-item subscription__list-item_not-include subscription-focused__list-item_not-include">Бесплатная неделя для вашего друга или члена семьи</li>
             </ul>
-            <a href="#" class="btn subscription-focused__btn">Выбрать</a>
+            <a href="#/" class="btn subscription-focused__btn">Выбрать</a>
           </div>
         </div>
         <div class="subscription">
@@ -225,7 +236,7 @@
               <li class="subscription__list-item">Консультации по спортивному питанию</li>
               <li class="subscription__list-item">Бесплатная неделя для вашего друга или члена семьи</li>
             </ul>
-            <a href="#" class="btn">Выбрать</a>
+            <a href="#/" class="btn">Выбрать</a>
           </div>
         </div>
         </div>
@@ -239,7 +250,7 @@
       <div class="section-eating__info">
         <h2 class="section-eating__title">Общей диеты не существует</h2>
         <p class="section-eating__text">При занятиях бегом очень важно что, сколько и когда вы едите. Общей диеты нет – рацион должен учитывать индивидуальные особенности организма, скорость метаболизма, программу тренировок. Очень важна профессиональная помощь диетолога, который разработает для вас специальную диету для тренировок.</p>
-        <a href="#" class="section-eating__btn">Выбрать диетолога</a>
+        <a href="#/" class="section-eating__btn">Выбрать диетолога</a>
       </div>
       <div class="section-eating__card">
         <img class="section-eating__card-img" src="images/icons/energy.svg" alt="">
@@ -259,13 +270,13 @@
       <div class="section-ask__info container-flex__info">
         <h2>Узнайте больше</h2>
         <p class="section-result__text container-flex__text">Все еще есть вопросы? Мы будем рады ответить на них в любое удобное для Вас время.</p>
-        <a href="#" class="btn">Спросите нас</a>
+        <a href="#/" class="btn">Спросите нас</a>
       </div>
     </div>
   </section>
   <footer class="footer">
     <div class="container footer__container">
-      <a href="#" class="company-name footer__company-name">Dietologonline</a>
+      <a href="#/" class="company-name footer__company-name">Dietologonline</a>
       <nav class="menu footer__menu">
         <ul class="menu__list footer__list">
           <li class="menu__list-item"><a href="#section-problems" class="menu__link">Почему мы</a></li>
