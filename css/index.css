@@ -183,7 +183,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url('/images/confetti.svg');
+  background-image: url('./images/confetti.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 55%;
