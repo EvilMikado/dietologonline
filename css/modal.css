@@ -23,15 +23,11 @@
 }
 
 .modal {
-  width: 30rem;
+  max-width: 30rem;
+  width: calc(100% - 1rem);
   background: white;
   padding: 2em;
   border-radius: 1em;
-}
-@media screen and (max-width: 426px) {
-  .modal {
-    width: 100%;
-  }
 }
 .modal__title {
   position: relative;
@@ -97,6 +93,19 @@
 .modal__btn:hover {
   background-color: #27ae60;
 }
+.modal__close-icon {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  z-index: 20;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.modal__close-icon:hover {
+  transform: scale(1.05) translateZ(0);
+}
 .modal_visible {
   left: 50%;
-}/*# sourceMappingURL=modal.css.map */
+}

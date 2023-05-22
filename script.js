@@ -8,8 +8,17 @@ const overlay = document.querySelector('.overlay')
 const phoneInput = document.querySelector('.phone-input')
 const modalBtn = document.querySelector('.modal__btn')
 const modalForm = document.querySelector('.modal__form')
+const modalCloseBtn = document.querySelector('.modal__close-icon')
 
-phoneInput.value = ''
+const closeModal = () =>{
+  modal.classList.remove('modal_visible')
+  overlay.classList.remove('overlay_visible')
+  modalForm.reset();
+}
+
+overlay.addEventListener('click', closeModal)
+modalBtn.addEventListener('click', closeModal)
+modalCloseBtn.addEventListener('click', closeModal)
 
 menuItem.forEach(item=>{
   item.addEventListener('click',()=>{
@@ -29,17 +38,6 @@ contactBtn.forEach(item=>{
     modal.classList.add('modal_visible')
     overlay.classList.add('overlay_visible')
   })
-})
-
-overlay.addEventListener('click',()=>{
-  modal.classList.remove('modal_visible')
-  overlay.classList.remove('overlay_visible')
-})
-
-modalBtn.addEventListener('click', ()=>{
-  modal.classList.remove('modal_visible')
-  overlay.classList.remove('overlay_visible')
-  modalForm.reset();  // Reset all form data
 })
 
 phoneInput.addEventListener('focusout',()=>{

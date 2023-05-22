@@ -183,7 +183,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url('/images/confetti.svg');
+  background-image: url('../images/confetti.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 55%;
@@ -347,7 +347,7 @@ p{
 }
 .subscription__header {
   background: #5DBD6D;
-  background-image: url('/images/Ellipse.svg'), url('/images/Ellipse thin.svg');
+  background-image: url('../images/Ellipse.svg'), url('../images/Ellipse thin.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 2em 0 1.5em 1.5em;
@@ -380,7 +380,7 @@ p{
   border-radius: 0 0 10px 10px;
 }
 .subscription-focused__main{
-  background-image: url('/images/Ellipse big.svg'), url('/images/Ellipse thin big.svg');
+  background-image: url('../images/Ellipse big.svg'), url('../images/Ellipse thin big.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -394,20 +394,20 @@ p{
   flex-direction: column;
   gap: 1.5em;
   margin-bottom: 2em;
-  list-style-image: url('/images/icons/list-type-ok-green.svg');
+  list-style-image: url('../images/icons/list-type-ok-green.svg');
 }
 .subscriprtion-focused__offers-list{
-  list-style-image: url('/images/icons/list-type-ok.svg');
+  list-style-image: url('../images/icons/list-type-ok.svg');
 }
 .subscription__list-item {
   padding-left: .5em;
 }
 .subscription__list-item_not-include{
-  list-style-image: url('/images/icons/list-type-cancel.svg');
+  list-style-image: url('../images/icons/list-type-cancel.svg');
   opacity: 0.55;
 }
 .subscription-focused__list-item_not-include{
-  list-style-image: url('/images/icons/list-type-cancel-light.svg');
+  list-style-image: url('../images/icons/list-type-cancel-light.svg');
   opacity: 0.55;
 }
 .subscription-focused__btn{
@@ -435,7 +435,7 @@ p{
   margin: 1.5em 0;
 }
 .section-eating__btn::after{
-  content: url('/images/icons/Vector.svg');
+  content: url('../images/icons/Vector.svg');
   margin-left: .5em;
 }
 .section-eating__btn:hover{
@@ -472,7 +472,6 @@ p{
   display: block;
   max-width: 100%;
   order:2;
-  /* margin-right: -4em; */
 }
 .section-ask__info{
   margin-left: 0;
