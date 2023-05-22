@@ -50,7 +50,7 @@ phoneInput.addEventListener('focus', _ => {
     phoneInput.value = '+';
 });
 
-phoneInput.addEventListener('keypress', e => {
+phoneInput.addEventListener('keydown', e => {
   if(!/\d/.test(e.key) || phoneInput.value.length > 11)
     e.preventDefault();
 });
