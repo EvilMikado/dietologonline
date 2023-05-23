@@ -6,9 +6,15 @@ const modal = document.querySelector('.modal')
 const contactBtn = document.querySelectorAll('.btn')
 const overlay = document.querySelector('.overlay')
 const phoneInput = document.querySelector('.phone-input')
+const emailInput = document.querySelector('.email-input')
 const modalBtn = document.querySelector('.modal__btn')
 const modalForm = document.querySelector('.modal__form')
 const modalCloseBtn = document.querySelector('.modal__close-icon')
+
+const maskPhone = {
+  mask: '+{7 }(000) 000-00-00'
+}
+IMask(phoneInput, maskPhone) 
 
 const closeModal = () =>{
   modal.classList.remove('modal_visible')
@@ -39,18 +45,3 @@ contactBtn.forEach(item=>{
     overlay.classList.add('overlay_visible')
   })
 })
-
-phoneInput.addEventListener('focusout',()=>{
-  if(phoneInput.value.length < 2)
-    phoneInput.value = ''
-})
-
-phoneInput.addEventListener('focus', _ => {
-  if(!/^\+\d*$/.test(phoneInput.value))
-    phoneInput.value = '+';
-});
-
-phoneInput.addEventListener('keydown', e => {
-  if(!/\d/.test(e.key) || phoneInput.value.length > 11)
-    e.preventDefault();
-});

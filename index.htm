@@ -17,8 +17,8 @@
     </svg>
     <form class="modal__form" action="">
       <h2 class="modal__title">Оставьте заявку</h2>
-      <input type="text" class="modal__input" placeholder="Ваше имя">
-      <input type="text" class="modal__input" placeholder="Ваша почта">
+      <input type="text" name="sdfds" pattern="^[A-Za-z \s*]+$ required" class="modal__input" placeholder="Ваше имя">
+      <input type="email" class="modal__input email-input" placeholder="Ваша почта">
       <input type="text" class="modal__input phone-input" placeholder="Номер телефона">
       <textarea placeholder="Ваши пожелания" class="modal__textarea"></textarea>
       <button type="button" class="modal__btn">Отправить</button>
@@ -292,6 +292,7 @@
       </nav>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="script.js"></script>
 </body>
 </html>
